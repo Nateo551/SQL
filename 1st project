@@ -1,0 +1,28 @@
+--Create a kitchen store databse
+
+CREATE TABLE kitchen_stuff (id INTEGER PRIMARY KEY, name TEXT, size TEXT, color TEXT, isle INTEGER);
+
+INSERT INTO kitchen_stuff VALUES
+(1, "cups", "x_small", "blue", 1),
+(2, "cups1", "x_small", "green", 1),
+(3, "cups2", "x_small", "yellow", 1),
+(4, "bowls", "small", "green", 2),
+(5, "bowls1", "small", "yellow", 2),
+(6, "bowls2", "small", "brown", 3),
+(7, "bowls3", "medium", "purple", 3),
+(8, "bowls4", "medium", "red", 3),
+(9, "pans", "medium", "purple", 2),
+(10, "cookie sheets", "medium", "orange", 4),
+(11, "cookie sheets1", "medium", "red", 4),
+(12, "cookie sheets2", "medium", "blue", 4),
+(13, "cookie sheets3", "medium", "grey", 4),
+(14, "cookie sheets4", "large", "purple", 4);
+
+
+--display data base items that are the color red
+
+SELECT COUNT(color) 
+FROM kitchen_stuff
+WHERE color = "red";
+
+
